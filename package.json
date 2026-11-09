@@ -1,0 +1,27 @@
+{
+  "name": "chessinonemove",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xenodorian/ChessInOneMove.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xenodorian/ChessInOneMove/issues"
+  },
+  "homepage": "https://github.com/xenodorian/ChessInOneMove#readme",
+  "dependencies": {
+    "@mongodb-js/zstd": "^7.0.0",
+    "chess.js": "^1.4.0",
+    "chessground": "^9.2.1",
+    "esbuild": "^0.28.2"
+  },
+  "type": "module"
+}
