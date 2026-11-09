@@ -46,7 +46,7 @@ function loadPuzzle() {
     fen: p.fen, orientation: color, turnColor: color, check: chess.inCheck() ? color : false,
     lastMove: [p.last.slice(0, 2), p.last.slice(2, 4)],
     movable: { free: false, color, dests: destsOf(chess), showDests: false, events: { after: onMove } },
-    draggable: { showGhost: true }, premovable: { enabled: false }, highlight: { lastMove: true, check: true },
+    draggable: { showGhost: true }, premovable: { enabled: false }, highlight: { lastMove: false, check: true },
     animation: { enabled: true, duration: 200 }, coordinates: true,
   };
   if (!cg) cg = Chessground($('board'), cfg); else cg.set(cfg);

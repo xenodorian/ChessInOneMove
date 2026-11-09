@@ -35,5 +35,4 @@ body.lost .boardwrap{animation:shake .35s}
 .theme-blue cg-board{background-color:#6e8fb1;background-image:conic-gradient(#dee3e6 25%,#6e8fb1 0 50%,#dee3e6 0 75%,#6e8fb1 0);background-size:25% 25%}
 .theme-slate cg-board{background-color:#566170;background-image:conic-gradient(#b7c0cc 25%,#566170 0 50%,#b7c0cc 0 75%,#566170 0);background-size:25% 25%}
 .theme-rose cg-board{background-color:#b4707e;background-image:conic-gradient(#f3dfe2 25%,#b4707e 0 50%,#f3dfe2 0 75%,#b4707e 0);background-size:25% 25%}
-cg-board square.last-move{background-color:rgba(255,210,60,.45)}
 cg-board square.check{background:radial-gradient(ellipse at center,rgba(255,0,0,1) 0%,rgba(231,0,0,1) 25%,rgba(169,0,0,0) 89%,rgba(158,0,0,0) 100%)}
