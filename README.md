@@ -13,7 +13,7 @@ A chess puzzle game. You get a position that is one move from checkmate. Find th
 2. The player's position is the puzzle FEN after applying the first move in `Moves`.
 3. chess.js enumerates all legal moves and finds every move that gives checkmate. Only positions with exactly one mating move are kept, and that move must match the Lichess solution.
 4. Each position gets a difficulty score from: non-mating checks available, captures available, number of legal moves, piece count, and bonuses for hard-to-see mates (underpromotion, castling, en passant, discovered or double check, knight/pawn/king mates). Quiet-looking queen mates are scored lower.
-5. Only puzzles with popularity >= 70 and >= 150 plays are used. The top 2400 by score ship, split into four levels.
+5. Only puzzles with popularity >= 90 and >= 1000 plays (105,111 candidate rows; 2,765 had several mates and were dropped, 102,346 had exactly one) are used. The top 2400 by score ship, split into four levels.
 
 Rebuild: `python3 tools/filter_mate1.py lichess_db_puzzle.csv.zst mate1.csv`, then `node tools/build_puzzles.js mate1.csv data/puzzles.json`, then `node tools/build_site.js`.
 

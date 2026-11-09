@@ -13,7 +13,7 @@ for (const line of lines) {
   const c = line.split(',');
   stats.rows++;
   const pop = +c[ix('Popularity')], plays = +c[ix('NbPlays')];
-  if (pop < 70 || plays < 150) continue;
+  if (pop < 90 || plays < 1000) continue;
   const fen0 = c[ix('FEN')], mv = c[ix('Moves')].split(' ');
   try {
     const g = new Chess(fen0);
